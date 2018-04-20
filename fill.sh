@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd $(dirname $0)
-times=$(( $RANDOM % 10 ))
+times=$(( $RANDOM % 10 + 1 ))
 
 for (( i = 0; i < $times; i++ )); do
   ts=$(date '+%s')
