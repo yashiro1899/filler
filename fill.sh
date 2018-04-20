@@ -7,7 +7,6 @@ for (( i = 0; i < $times; i++ )); do
   ts=$(date '+%s')
 
   echo "* $ts" >> $README
-  git commit -am $ts
-  sleep 2
+  git commit -am $ts && sleep 2
 done
 git push
